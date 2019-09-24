@@ -1,0 +1,19 @@
+name: 'Spellcheck'
+description: 'An action for spellchecking files.'
+author: 'Variant AS'
+inputs: 
+  main-comment:
+    description: 'The comment to display when misspellings are found'
+    default: 'I found one or more possible misspellings 😇'
+  language:
+    description: 'The language to spellcheck with.'
+    default: 'en_US'
+  ignored-words:
+    description: 'Semi-colon separated list of words to ignore spellchecking on.'
+    default: ''
+  repo-token:
+    description: 'Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}'
+    required: true'
+runs:
+  using: 'node12'
+  main: 'lib/main.js'
