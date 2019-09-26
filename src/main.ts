@@ -39,6 +39,8 @@ export async function run() {
       }
     });
 
+    console.log(result);
+
     console.log("Getting file diffs");
     const fileDiffs = getDiff(result.data);
 
