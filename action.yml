@@ -1,6 +1,9 @@
 name: 'Spellcheck'
 description: 'An action for spellchecking files.'
 author: 'Variant AS'
+branding:
+  icon: 'file-text'  
+  color: 'red'
 inputs: 
   main-comment:
     description: 'The comment to display when misspellings are found'
