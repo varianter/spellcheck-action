@@ -15,6 +15,8 @@ export default function initSpellchecker(
   spellchecker.setSpellcheckerType(ALWAYS_USE_HUNSPELL);
   const subfolder = sanitizeDictionaryFolder(dictionaryFolder, language);
   spellchecker.setDictionary(language, `dictionaries/${subfolder}`);
+  console.log(language, ":", subfolder, ":", ignoredWords)
+  console.log(__dirname)
   ignoredWords = ignoredWords.map(t => t.toLowerCase());
 
   return function spellcheck(fullText: string): Array<Mispelled> {
