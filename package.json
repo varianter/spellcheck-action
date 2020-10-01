@@ -19,7 +19,7 @@
   "author": "Variant AS",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.0.0",
+    "@actions/core": "^1.2.6",
     "@actions/github": "^1.1.0",
     "remove-markdown": "^0.3.0",
     "spellchecker": "^3.7.0"
